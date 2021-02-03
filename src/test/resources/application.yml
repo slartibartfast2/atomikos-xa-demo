@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    hibernate:
+      use-new-id-generator-mappings: false
+  datasource:
+    mysql:
+      driver-class-name: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource
+      url: jdbc:mysql://localhost:3306/demo
+      username: root
+      password:
+    postgresql:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/postgres?currentSchema=demo
+      username: postgres
+      password: atomikos
